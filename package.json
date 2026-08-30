@@ -1,0 +1,32 @@
+{
+  "name": "korter-mcp",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Event-sourced korter.ge proxy exposed as MCP tools — price history for Tbilisi new-builds, personal research use",
+  "type": "module",
+  "packageManager": "pnpm@11.14.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node --experimental-strip-types scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@lambda-house/teob-ts": "^0.4.1",
+    "better-sqlite3": "^12.11.1",
+    "hono": "^4.12.30"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^26.1.1",
+    "fast-check": "^4.9.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}

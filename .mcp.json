@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "korter": {
+      "command": "node",
+      "args": ["dist/main.js", "stdio"]
+    }
+  }
+}

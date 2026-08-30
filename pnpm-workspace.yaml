@@ -1,0 +1,6 @@
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+minimumReleaseAgeExclude:
+  # our own framework — fresh releases are consumed the day they are tagged
+  - '@lambda-house/teob-ts'
